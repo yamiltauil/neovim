@@ -8,8 +8,8 @@
 :set splitright
 :set autoindent
 :set smarttab
-:set expandtab
-:set softtabstop=2
+:set noexpandtab
+:set tabstop=2
 :set pumheight=10
 :set completeopt=menuone,noinsert,noselect
 :set omnifunc=syntaxcomplete#Complete
@@ -27,25 +27,25 @@
 :set noruler
 
 " PLUGINS CONFIG
-source /home/yamil/.config/nvim/pluginsConfig/plugins.vim
-source /home/yamil/.config/nvim/pluginsConfig/luaConfig.vim
-source /home/yamil/.config/nvim/pluginsConfig/cocConfig.vim
-source /home/yamil/.config/nvim/pluginsConfig/highlight.vim
-source /home/yamil/.config/nvim/pluginsConfig/indentLine.vim
-source /home/yamil/.config/nvim/pluginsConfig/menu.vim
-source /home/yamil/.config/nvim/pluginsConfig/statusBar.vim
+source ~/.config/nvim/pluginsConfig/plugins.vim
+source ~/.config/nvim/pluginsConfig/luaConfig.vim
+source ~/.config/nvim/pluginsConfig/cocConfig.vim
+source ~/.config/nvim/pluginsConfig/highlight.vim
+source ~/.config/nvim/pluginsConfig/indentLine.vim
+source ~/.config/nvim/pluginsConfig/menu.vim
+source ~/.config/nvim/pluginsConfig/statusBar.vim
 
 " SHORTCUTS
-source /home/yamil/.config/nvim/shortcuts/buffer.vim
-source /home/yamil/.config/nvim/shortcuts/comments.vim
-source /home/yamil/.config/nvim/shortcuts/formatCode.vim 
-source /home/yamil/.config/nvim/shortcuts/splits.vim
+source ~/.config/nvim/shortcuts/buffer.vim
+source ~/.config/nvim/shortcuts/comments.vim
+source ~/.config/nvim/shortcuts/formatCode.vim 
+source ~/.config/nvim/shortcuts/splits.vim
 
 " THEMES
-source /home/yamil/.config/nvim/theme/themes.vim
+source ~/.config/nvim/theme/themes.vim
 
 " FUNCTIONS 
-source /home/yamil/.config/nvim/functions/findAndReplace.vim
-source /home/yamil/.config/nvim/functions/gitPull.vim
-source /home/yamil/.config/nvim/functions/transparent.vim
+source ~/.config/nvim/functions/findAndReplace.vim
+source ~/.config/nvim/functions/gitPull.vim
+source ~/.config/nvim/functions/transparent.vim
 

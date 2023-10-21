@@ -1,7 +1,6 @@
 lua << EOF
-require("trouble").setup{}
-require"lspconfig".tsserver.setup{}
 require("nvim-autopairs").setup {}
+require'lspconfig'.tsserver.setup{}
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css"},
   sync_install = false,
@@ -9,8 +8,7 @@ require'nvim-treesitter.configs'.setup {
   enable = true,
   additional_vim_regex_highlighting = false,
   disable = {},
-   indent = { enable = true },
+  indent = { enable = true },
   rainbow = { enable = true },
 }
-
 EOF

@@ -8,7 +8,7 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 "instalador de plugins 
 Plug 'junegunn/vim-plug'
 
-"autocompletado  requiere sudo npm install -g typescript typescript-language-server
+"autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
 Plug 'neoclide/coc-tsserver'
 Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim',{'branch':'release'}
@@ -21,8 +21,12 @@ Plug 'mlaursen/vim-react-snippets'
 
 "formateador de codigo 
 Plug 'neoclide/coc-eslint'
+" Plug 'jose-elias-alvarez/null-ls.nvim'
+" Plug 'MunifTanjim/eslint.nvim'
 Plug 'neoclide/coc-prettier'
 
+" taliwind
+Plug 'kabouzeid/nvim-lspinstall'
 "error lens
 Plug 'folke/trouble.nvim'
 
@@ -66,6 +70,5 @@ Plug 'machakann/vim-highlightedyank'
 
 " transparent
 Plug 'tribela/vim-transparent'
-
 
 call plug#end()
