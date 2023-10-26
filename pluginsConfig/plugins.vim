@@ -21,20 +21,16 @@ Plug 'mlaursen/vim-react-snippets'
 
 "formateador de codigo 
 Plug 'neoclide/coc-eslint'
-" Plug 'jose-elias-alvarez/null-ls.nvim'
-" Plug 'MunifTanjim/eslint.nvim'
 Plug 'neoclide/coc-prettier'
 
 " taliwind
 Plug 'kabouzeid/nvim-lspinstall'
+
 "error lens
 Plug 'folke/trouble.nvim'
 
-"minify
-Plug 'maksimr/vim-jsbeautify'
-
 "iconos de errores
-Plug 'preservim/nerdtree'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'ryanoasis/vim-devicons'
 
 "color linea de indentacion 
@@ -46,6 +42,7 @@ Plug 'neoclide/coc-pairs'
 " highlight 
 Plug 'pangloss/vim-javascript'
 Plug 'MaxMEllon/vim-jsx-pretty'
+Plug 'norcalli/nvim-colorizer.lua'
 
 "barra de status
 Plug 'vim-airline/vim-airline'
@@ -70,5 +67,13 @@ Plug 'machakann/vim-highlightedyank'
 
 " transparent
 Plug 'tribela/vim-transparent'
+"debugger
+Plug 'mfussenegger/nvim-dap'
+Plug 'mxsdev/nvim-dap-vscode-js'
+Plug 'rcarriga/nvim-dap-ui'
 
+"fzf
+Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
+Plug 'junegunn/fzf.vim' " needed for previews
+Plug 'antoinemadec/coc-fzf'
 call plug#end()

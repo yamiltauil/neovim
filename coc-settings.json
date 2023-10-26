@@ -4,16 +4,13 @@
   "suggest.floatConfig": {
     "border": true
   },
-  "diagnostic.floatConfig": {
-    "border": true
-  },
+	"suggest.detailField": "preview",
   "signature.floatConfig": {
     "border": true
   },
   "hover.floatConfig": {
     "border": true
   },
-  "suggest.detailField": "preview",
   "codeLens.enable": true,
   "eslint.enable": true,
   "eslint.packageManager": "npm",
@@ -21,25 +18,33 @@
   "eslint.alwaysShowStatus": true,
   "eslint.run": "onType",
   "eslint.format.enable": true,
+	"eslint.options": {"singleQuote":true},
   "diagnostic.messageTarget": "float",
-  "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
   "diagnostic.warningSign": "⚠",
   "diagnostic.errorSign": ">>",
   "diagnostic.virtualTextFormat": "%message",
+	"diagnostic.enableHighlightLineNumber": true,
+	"diagnostic.floatConfig": {
+    "border": true
+  },
   "colors.enable": true,
+	"colors.highlightPriority": 1000,
   "prettier.enable": true,
   "prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
   "prettier.requireConfig": true,
+	"prettier.onlyUseLocalVersion": true,
   "highlight.colors.enable": true,
+	"typescript.preferences.quoteStyle":"single",
+	"javascript.preferences.quoteStyle": "single",
   "javascript.suggest.autoImports": true,
   "javascript.suggest.enabled": true,
   "javascript.autoClosingTags": false,
+	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+	"javascript.format.enabled": false,
   "highlight.colorNames.enable": true,
-  "snippet.highlight": true,
-  "colors.highlightPriority": 1000,
   "highlight.trace": "messages",
-  "diagnostic.enableHighlightLineNumber": true,
-  "javascript.format.enabled": false,
+	"snippet.highlight": true,
   "snippets.extends": {
     "javascriptreact": ["javascript"],
     "typescript": ["javascript"]

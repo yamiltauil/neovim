@@ -1,6 +1,7 @@
 lua << EOF
 require("nvim-autopairs").setup {}
 require'lspconfig'.tsserver.setup{}
+require'colorizer'.setup()
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css"},
   sync_install = false,
