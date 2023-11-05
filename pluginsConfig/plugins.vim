@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 "tema
 Plug 'sainnhe/gruvbox-material'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 "instalador de plugins 
 Plug 'junegunn/vim-plug'
@@ -12,7 +11,7 @@ Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc-tsserver'
 Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim',{'branch':'release'}
-Plug 'neoclide/coc-html'
+" Plug 'neoclide/coc-html'
 Plug 'neoclide/coc-json'
 Plug 'neoclide/coc-emmet'
 Plug 'neoclide/coc-snippets'
@@ -33,16 +32,8 @@ Plug 'folke/trouble.nvim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'ryanoasis/vim-devicons'
 
-"color linea de indentacion 
-Plug 'Yggdroot/indentLine'
 "autopairs
 Plug 'windwp/nvim-autopairs'
-Plug 'neoclide/coc-pairs'
-
-" highlight 
-Plug 'pangloss/vim-javascript'
-Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'norcalli/nvim-colorizer.lua'
 
 "barra de status
 Plug 'vim-airline/vim-airline'
@@ -57,20 +48,14 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-signify'
 
 " git integrations 
-Plug 'tpope/vim-fugitive'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'neoclide/coc-git'
-
+" Plug 'tpope/vim-fugitive'
+Plug 'kdheepak/lazygit.nvim'
 "buffer naveigation
 Plug 'johann2357/nvim-smartbufs'
 Plug 'machakann/vim-highlightedyank'
 
 " transparent
 Plug 'tribela/vim-transparent'
-"debugger
-Plug 'mfussenegger/nvim-dap'
-Plug 'mxsdev/nvim-dap-vscode-js'
-Plug 'rcarriga/nvim-dap-ui'
 
 "fzf
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}

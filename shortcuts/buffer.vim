@@ -21,6 +21,6 @@ nnoremap <space>q9 :lua require("nvim-smartbufs").close_buffer(9)<CR>
 
 "tab controll
 nnoremap <space>qq :w<CR>:bd<CR>
-nnoremap <space>nn :bnext<CR>
-nnoremap <space>NN :bprev<CR>
+nnoremap <space>ll :bnext<CR>
+nnoremap <space>hh :bprev<CR>
 
