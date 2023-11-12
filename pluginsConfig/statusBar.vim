@@ -1,13 +1,24 @@
 "configuracion de airline 
+"
 let g:airline_theme='tomorrow'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'jsformatter'
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1 
+
+let g:airline#extensions#whitespace#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+
+let g:airline_section_z = '%4l/%L'
+
 if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
+	  let g:airline_symbols = {}
 endif
+
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
@@ -33,4 +44,3 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:javascript_conceal_and                  = "∧"
 let g:javascript_conceal_left_parenthesis     = "❨"
 let g:javascript_conceal_right_parenthesis    = "❩"
-
