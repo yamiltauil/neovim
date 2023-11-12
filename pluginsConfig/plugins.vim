@@ -11,7 +11,7 @@ Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc-tsserver'
 Plug 'neovim/nvim-lspconfig'
 Plug 'neoclide/coc.nvim',{'branch':'release'}
-" Plug 'neoclide/coc-html'
+
 Plug 'neoclide/coc-json'
 Plug 'neoclide/coc-emmet'
 Plug 'neoclide/coc-snippets'
@@ -48,10 +48,8 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-signify'
 
 " git integrations 
-" Plug 'tpope/vim-fugitive'
 Plug 'kdheepak/lazygit.nvim'
 "buffer naveigation
-Plug 'johann2357/nvim-smartbufs'
 Plug 'machakann/vim-highlightedyank'
 
 " transparent
