@@ -1,7 +1,7 @@
 let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7, 'bind': 'esc:abort' } }
 
 let g:coc_fzf_preview = {'options': ['--layout=reverse', '--info=inline', '--preview']}
-let g:coc_fzf_opts = ['--layout=reverse', '--info=inline', '--preview', 'pygmentize -g']
+let g:coc_fzf_opts = ['--layout=reverse', '--info=inline', '--preview']
 
     let g:fzf_colors =
     \ { 'fg':      ['fg', 'Normal'],
