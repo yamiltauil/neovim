@@ -4,6 +4,8 @@
 :set encoding=utf-8
 :set showmatch
 :set number
+:set relativenumber
+:set number relativenumber
 :set splitbelow
 :set splitright
 :set autoindent
@@ -23,12 +25,18 @@
 :set wrap
 :set visualbell
 :set confirm
-:set noruler
-:set nocursorline
+" :set noruler
+:set cursorline
 :set nocursorcolumn
+:set colorcolumn=
 " :set termguicolors
-:set list lcs=tab:\|\
-
+" :set list lcs=tab:\|\
+" :set list lcs=space:.
+:set list lcs=tab:··
+:set fillchars+=vert:\+
+" autocmd! FileType fzf set laststatus=0 noshowmode noruler
+"   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+" :set fillchars+=vert:\
 " Inicia el servidor LSP
 
 " PLUGINS CONFIG
