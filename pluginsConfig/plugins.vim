@@ -40,9 +40,9 @@ Plug 'ryanoasis/vim-devicons'
 "autopairs
 Plug 'windwp/nvim-autopairs'
 
-"barra de status
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes' 
+" barra de status
+ Plug 'vim-airline/vim-airline'
+ Plug 'vim-airline/vim-airline-themes' 
 
 "Commentary 
 Plug 'tpope/vim-commentary'
