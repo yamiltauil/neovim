@@ -1,9 +1,11 @@
 lua << EOF
-require("nvim-autopairs").setup {}
+require("nvim-autopairs").setup {
+		\  ignored_next_char = "[%w%.]" 
+	  \ }
 require'lspconfig'.tsserver.setup{}
 -- require'colorizer'.setup()
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css"},
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css","json","sql","xml","yaml","tsx","markdown","html","dockerfile","bash"},
   sync_install = false,
   auto_install = true,
   enable = true,

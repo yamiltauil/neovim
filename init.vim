@@ -12,15 +12,15 @@
 :set smarttab
 :set noexpandtab
 :set tabstop=2
-:set pumheight=10
+:set pumheight=15
 :set completeopt=menuone,noinsert,noselect
 :set omnifunc=syntaxcomplete#Complete
 :set shiftwidth=2
 :set hlsearch
+:set incsearch
 :set cc=80
 :set clipboard+=unnamedplus
 :set laststatus=2
-:set incsearch
 :set smartcase
 :set wrap
 :set visualbell
@@ -29,11 +29,9 @@
 :set cursorline
 :set nocursorcolumn
 :set colorcolumn=
-" :set termguicolors
-" :set list lcs=tab:\|\
-" :set list lcs=space:.
+:set termguicolors
 :set list lcs=tab:··
-:set fillchars+=vert:\+
+:set fillchars+=vert:\ 
 " autocmd! FileType fzf set laststatus=0 noshowmode noruler
 "   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 " :set fillchars+=vert:\
@@ -56,8 +54,9 @@ source ~/.config/nvim/shortcuts/splits.vim
 source ~/.config/nvim/shortcuts/fuzzyFinder.vim
 
 " THEMES
-source ~/.config/nvim/theme/themes.vim
+" source ~/.config/nvim/theme/themes.vim
 
 " FUNCTIONS 
 source ~/.config/nvim/functions/findAndReplace.vim
+
 

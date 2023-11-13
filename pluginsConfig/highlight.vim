@@ -1,5 +1,9 @@
 "highlight text 
+let g:gruvbox_material_background='medium'
+colorscheme gruvbox-material
+" colorscheme habamax
 let g:highlightedyank_highlight_duration = 1000
+let g:terminal_color=15
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
