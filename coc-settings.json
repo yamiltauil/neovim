@@ -12,7 +12,7 @@
     "border": true
   },
   "codeLens.enable": true,
-  "eslint.enable": false,
+  "eslint.enable": true,
   "eslint.packageManager": "npm",
   "eslint.fixOnSaveTimeout": 1000,
   "eslint.alwaysShowStatus": true,
@@ -41,4 +41,10 @@
   "javascript.autoClosingTags": false,
 	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
 	"snippet.highlight": true,
+	"snippets.priority": 90,
+	"snippets.autoTrigger": true,
+	"snippets.extends": {
+		  "javascriptreact": ["javascript"],
+		  "typescript": ["javascript"]
+	}
 }
