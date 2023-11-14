@@ -5,6 +5,7 @@ Plug 'neoclide/coc-tsserver'
 Plug 'kabouzeid/nvim-lspinstall'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'windwp/nvim-ts-autotag'
 
 "tema
 Plug 'sainnhe/gruvbox-material'

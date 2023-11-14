@@ -8,4 +8,4 @@ let g:lazygit_use_custom_config_file_path = 0 " config file path is evaluated if
 let g:lazygit_config_file_path = '' " custom config file path
 " OR
 let g:lazygit_config_file_path = [] " list of custom config file paths
-nnoremap <F4> :LazyGit<CR>
+nnoremap <space>4 :LazyGit<CR>
