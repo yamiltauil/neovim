@@ -16,6 +16,8 @@ require'nvim-treesitter.configs'.setup {
 	highlight = { enable = true},
 }
 
+-- gitsigns
+
 require('gitsigns').setup {
   signs = {
     add          = { text = '│' },
