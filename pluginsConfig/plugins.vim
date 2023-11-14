@@ -50,19 +50,17 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 "diferencias entre archivos 
-Plug 'mhinz/vim-signify'
+" Plug 'mhinz/vim-signify'
+Plug 'lewis6991/gitsigns.nvim'
 
 " git integrations 
 Plug 'kdheepak/lazygit.nvim'
 
-
-" Plug 'machakann/vim-highlightedyank'
-
 " transparent
-" Plug 'tribela/vim-transparent"
+Plug 'tribela/vim-transparent'
 
 "fzf
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
-Plug 'antoinemadec/coc-fzf'
+
 call plug#end()

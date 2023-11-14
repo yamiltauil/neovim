@@ -26,12 +26,13 @@
 :set visualbell
 :set confirm
 " :set noruler
-:set cursorline
+" :set cursorline
 :set nocursorcolumn
 :set colorcolumn=
 :set termguicolors
 :set list lcs=tab:··
 :set fillchars+=vert:\ 
+:set statusline+=%{get(b:,'gitsigns_status','')}
 autocmd! FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 

@@ -1,6 +1,7 @@
 let g:fzf_layout = { 'window': { 'width': 0.7, 'height': 0.7, 'bind': 'esc:abort' } }
 
-let g:coc_fzf_preview = {'options': ['--layout=reverse', '--info=inline', '--preview']}
+let g:coc_fzf_preview_fullscreen = 0
+let g:coc_fzf_preview = {'options': ['--layout=reverse', '--info=inline', '--preview','right:80%']}
 let g:coc_fzf_opts = ['--layout=reverse', '--info=inline', '--preview']
 
     let g:fzf_colors =
@@ -21,6 +22,6 @@ let g:coc_fzf_opts = ['--layout=reverse', '--info=inline', '--preview']
 let g:fzf_colors_option = '--color=16'
 
 nnoremap <F2> :Files<CR>
-tnoremap <F2> :abort<CR>
 nnoremap <F3> :Rg<CR>
 nnoremap <F5> :Colors<CR>
+

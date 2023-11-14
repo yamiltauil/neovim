@@ -30,3 +30,4 @@ let g:rnvimr_border_attr = {'fg': 7, 'bg': -1}
 let g:rnvimr_edit_cmd = 'drop'
 
 nnoremap <F1> :RnvimrToggle<CR>
+tnoremap <q> <C-\><C-n>:RnvimrToggle<CR>
