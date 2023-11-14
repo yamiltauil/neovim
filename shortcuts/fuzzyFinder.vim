@@ -21,7 +21,8 @@ let g:coc_fzf_opts = ['--layout=reverse', '--info=inline', '--preview']
 
 let g:fzf_colors_option = '--color=16'
 
-nnoremap <F2> :Files<CR>
-nnoremap <F3> :Rg<CR>
-nnoremap <F5> :Colors<CR>
+nnoremap <space>2 :Files<CR>
+nnoremap <space>3 :Rg<CR>
+" tnoremap <space>q :abort<CR>
+nnoremap <space>5 :Colors<CR>
 
