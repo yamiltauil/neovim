@@ -1,3 +1,4 @@
+" lua config 
 lua << EOF
 require("nvim-autopairs").setup {
 		\  ignored_next_char = "[%w%.]" 
@@ -18,9 +19,7 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   }
 }
-
 -- gitsigns
-
 require('gitsigns').setup {
   signs = {
     add          = { text = '│' },

@@ -5,7 +5,7 @@
 " let g:airline_theme='tomorrow'
 " let g:airline_theme='base16_gruvbox_light_hard'
 " let g:airline_theme='base16_tomorrow' 
-let g:airline_theme='wombat'
+let g:airline_theme='base16_gruvbox_dark_pale'
 
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
