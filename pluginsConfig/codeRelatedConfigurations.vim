@@ -16,6 +16,14 @@ nnoremap <space>t :tag   <C-R>=expand('<cword>')<CR><CR>
 "find 
 nnoremap <Space>p /
 
+" surround 
+"single world
+nmap ` ysiw]
+nmap ´ ysiw}
+nmap 9 ysiw)
+nmap ç ysiw<div>
+"entire line
+
 lua << EOF
 require("nvim-autopairs").setup { map_cr = false }
 EOF
