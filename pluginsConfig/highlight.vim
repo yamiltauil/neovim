@@ -4,17 +4,23 @@ colorscheme gruvbox-material
 " colorscheme habamax
 let g:highlightedyank_highlight_duration = 1000
 let g:terminal_color=15
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+
+
+lua << EOF
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css","json","sql","xml","yaml","tsx","markdown","html","dockerfile","bash"},
+  sync_install = false,
+  auto_install = true,
+  enable = true,
+  additional_vim_regex_highlighting = true,
+  disable = {},
+  indent = { enable = true },
+  rainbow = { enable = true },
+	highlight = { enable = true},
+	 autotag = {
+    enable = true,
+  }
+}
+EOF
+

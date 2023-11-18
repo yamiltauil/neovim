@@ -2,14 +2,14 @@
   "suggest.autoTrigger": "always",
   "suggest.timeout": 5000,
   "suggest.floatConfig": {
-    "border": true
+    "border": false
   },
 	"suggest.detailField": "preview",
   "signature.floatConfig": {
-    "border": true
+    "border": false
   },
   "hover.floatConfig": {
-    "border": true
+    "border": false
   },
   "codeLens.enable": true,
   "eslint.enable": true,

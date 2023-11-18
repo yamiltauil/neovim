@@ -33,24 +33,18 @@
 :set list lcs=tab:··
 :set fillchars+=vert:\ 
 :set statusline+=%{get(b:,'gitsigns_status','')}
-" autocmd! FileType fzf set laststatus=0 noshowmode noruler
-"   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
-source ~/.config/nvim/pluginsConfig/config.vim
 source ~/.config/nvim/pluginsConfig/cocConfig.vim
+source ~/.config/nvim/pluginsConfig/lspServer.vim
 source ~/.config/nvim/pluginsConfig/highlight.vim
 source ~/.config/nvim/pluginsConfig/menu.vim
 source ~/.config/nvim/pluginsConfig/statusBar.vim
-source ~/.config/nvim/pluginsConfig/lazygit.vim
-
-" SHORTCUTS
-source ~/.config/nvim/shortcuts/buffer.vim
-source ~/.config/nvim/shortcuts/comments.vim
-source ~/.config/nvim/shortcuts/formatCode.vim 
-source ~/.config/nvim/shortcuts/splits.vim
-source ~/.config/nvim/shortcuts/fuzzyFinder.vim
+source ~/.config/nvim/pluginsConfig/git.vim
+source ~/.config/nvim/pluginsConfig/bufferControl.vim
+source ~/.config/nvim/pluginsConfig/codeRelatedConfigurations.vim
+source ~/.config/nvim/pluginsConfig/fuzyfinder.vim
 
 " FUNCTIONS 
 source ~/.config/nvim/functions/findAndReplace.vim

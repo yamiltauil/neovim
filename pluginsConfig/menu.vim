@@ -3,12 +3,11 @@
  let g:rnvimr_enable_picker = 1
 
  let g:rnvimr_draw_border = 1
-
+ let g:rnvimr_win_height = 50
  let g:rnvimr_enable_bw = 1
 
  " Draw border with both
  let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
-
  let g:rnvimr_border_attr = {'fg': 7, 'bg': -1}
  " 0 gris
  " 1  red
@@ -23,12 +22,9 @@
  " 10 verde 
  " Add a shadow window, value is equal to 100 will disable shadow
  let g:rnvimr_shadow_winblend = 100
-
- " Replace `$EDITOR` candidate with this command to open the selected file
-
  let g:rnvimr_edit_cmd = 'drop'
 
- nnoremap <space>1 :RnvimrToggle<CR>
+ nnoremap <space>r :RnvimrToggle<CR>
  tnoremap <q> <C-\><C-n>:RnvimrToggle<CR>
 
 
