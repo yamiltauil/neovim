@@ -5,7 +5,6 @@ Plug 'neoclide/coc-tsserver'
 Plug 'williamboman/mason.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'windwp/nvim-ts-autotag'
 
 "tema
 Plug 'sainnhe/gruvbox-material'
@@ -17,36 +16,31 @@ Plug 'neoclide/coc.nvim',{'branch': 'release'}
 Plug 'neoclide/coc-emmet'
 
 "snippets
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"
-" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
-"ranger
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+"menu
+Plug 'nvim-tree/nvim-tree.lua'
 
-"iconos de errores
+"iconos
 Plug 'ryanoasis/vim-devicons'
 Plug 'nvim-tree/nvim-web-devicons'
 
 "autopairs
 Plug 'windwp/nvim-autopairs'
+Plug 'windwp/nvim-ts-autotag'
+Plug 'tpope/vim-surround'
 
-" barra de status
+"barra de status
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes' 
 
 "Commentary 
 Plug 'tpope/vim-commentary'
-" surround
-Plug 'tpope/vim-surround'
 
-"diferencias entre archivos 
-Plug 'lewis6991/gitsigns.nvim'
-
-" git integrations 
+"git integrations 
 Plug 'kdheepak/lazygit.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 
 "fzf
 Plug 'nvim-lua/plenary.nvim'
