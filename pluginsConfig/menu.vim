@@ -24,17 +24,31 @@
  let g:rnvimr_shadow_winblend = 100
  let g:rnvimr_edit_cmd = 'drop'
 
- nnoremap <space>r :RnvimrToggle<CR>
+ nnoremap <space>r :NvimTreeToggle<CR>
  tnoremap <q> <C-\><C-n>:RnvimrToggle<CR>
 
 
-"Netrw
-" let g:netrw_liststyle = 3
-" let g:netrw_banner = 0
-" let g:netrw_winsize = 15
-" let g:WebDevIconsOS = 'Darwin'
-" let g:WebDevIconsUnicodeDecorateFileNodes = 1
-" let g:netrw_keepdir = 0
+lua << EOF
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
 
-" nnoremap <F1> :Lexplore<CR>
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+-- OR setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
+})
+EOF
