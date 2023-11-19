@@ -1,17 +1,17 @@
 "configuracion de airline 
 
 
-let g:airline_theme='base16_gruvbox_dark_hard'
+" let g:airline_theme='base16_gruvbox_dark_hard'
 " let g:airline_theme='tomorrow'
 " let g:airline_theme='base16_gruvbox_light_hard'
 " let g:airline_theme='base16_tomorrow' 
 " let g:airline_theme='base16_gruvbox_dark_pale'
 " let g:airline_theme='transparent'
-" let g:airline_theme='base16_black_metal_bathory'
+let g:airline_theme='base16_chalk'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:tmuxline_powerline_separators = 1 
+let g:tmuxline_powerline_separators = 1
 
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#branch#enabled = 1
