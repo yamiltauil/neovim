@@ -22,7 +22,10 @@ nmap ` ysiw]
 nmap ´ ysiw}
 nmap 9 ysiw)
 nmap ç ysiw<div>
-"entire line
+
+"refactor
+xmap <space>x <Plug>(coc-codeaction-selected)
+nmap <space>x  <Plug>(coc-codeaction-selected)
 
 lua << EOF
 require("nvim-autopairs").setup { map_cr = false }
