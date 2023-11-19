@@ -7,7 +7,6 @@ let g:terminal_color=15
 
 
 lua << EOF
-
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "vimdoc", "query","javascript","typescript", "css","json","sql","xml","yaml","tsx","markdown","html","dockerfile","bash"},
   sync_install = false,
@@ -23,4 +22,3 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 EOF
-
