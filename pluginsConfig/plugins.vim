@@ -8,7 +8,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "tema
 Plug 'sainnhe/gruvbox-material'
-
+Plug 'tribela/vim-transparent'
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
 "plugins instalados con coc :coc-prettier coc-eslint coc-emet coc-diagnostic coc-tsserver @yaegassy/coc-tailwindcss3 coc-snippets
 
@@ -20,6 +20,7 @@ Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
 "menu
+Plug 'kevinhwang91/rnvimr'
 Plug 'nvim-tree/nvim-tree.lua'
 
 "iconos
@@ -30,6 +31,7 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'tpope/vim-surround'
+Plug 'fannheyward/coc-react-refactor'
 
 "barra de status
 Plug 'vim-airline/vim-airline'
