@@ -21,7 +21,6 @@ Plug 'mlaursen/vim-react-snippets'
 
 "menu
 Plug 'kevinhwang91/rnvimr'
-Plug 'nvim-tree/nvim-tree.lua'
 
 "iconos
 Plug 'ryanoasis/vim-devicons'
@@ -43,7 +42,8 @@ Plug 'tpope/vim-commentary'
 "git integrations 
 Plug 'kdheepak/lazygit.nvim'
 Plug 'lewis6991/gitsigns.nvim'
-
+" hide show code 
+" Plug 'kevinhwang91/nvim-ufo',{'branch': 'master'}
 "fzf
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }

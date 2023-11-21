@@ -8,7 +8,7 @@
 
  " Draw border with both
  let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
- let g:rnvimr_border_attr = {'fg': 3, 'bg': -1}
+ let g:rnvimr_border_attr = {'fg': 0, 'bg': -1}
  " 0 gris
  " 1  red
  " 2 green
@@ -25,7 +25,7 @@
  let g:rnvimr_edit_cmd = 'drop'
 
  nnoremap <space>r :RnvimrToggle<CR>
- tnoremap <space>r <C-\><C-n>:RnvimrToggle<CR>
+ " tnoremap <space>1 <C-\><C-n>:RnvimrToggle<CR>
 
 " Map Rnvimr action
 let g:rnvimr_action = {
@@ -46,10 +46,10 @@ let g:rnvimr_ranger_views = [
 " Customize the initial layout
 let g:rnvimr_layout = {
             \ 'relative': 'editor',
-            \ 'width': float2nr(round(0.7 * &columns)),
-            \ 'height': float2nr(round(0.7 * &lines)),
-            \ 'col': float2nr(round(0.15 * &columns)),
-            \ 'row': float2nr(round(0.15 * &lines)),
+            \ 'width': float2nr(round(0.8 * &columns)),
+            \ 'height': float2nr(round(0.83 * &lines)),
+            \ 'col': float2nr(round(0.098 * &columns)),
+            \ 'row': float2nr(round(0.07 * &lines)),
             \ 'style': 'minimal'
             \ }
 
@@ -69,16 +69,6 @@ let g:rnvimr_presets = [
             \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0},
             \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0.5}
             \ ]
-
-"Fullscreen for initial layout
- let g:rnvimr_layout = {
-            \ 'relative': 'editor',
-            \ 'width': &columns,
-            \ 'height': &lines - 2,
-            \ 'col': 0,
-            \ 'row': 0,
-            \ 'style': 'minimal'
-            \ }
 
  " Only use initial preset layout
  " let g:rnvimr_presets = [{}]
