@@ -33,6 +33,9 @@
 :set list lcs=tab:··
 :set fillchars+=vert:\ 
 :set statusline+=%{get(b:,'gitsigns_status','')}
+:set foldmethod=expr
+:set foldexpr=nvim_treesitter#foldexpr()
+:set foldlevel=99
 
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
