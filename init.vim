@@ -29,7 +29,7 @@
 " :set cursorline
 :set nocursorcolumn
 :set colorcolumn=
-:set termguicolors
+:set termguicolors "<--- watch colors on neovim usefull for frontend development"
 :set list lcs=tab:··
 :set fillchars+=vert:\ 
 :set statusline+=%{get(b:,'gitsigns_status','')}

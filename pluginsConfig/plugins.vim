@@ -2,15 +2,16 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc-tsserver'
-Plug 'williamboman/mason.nvim'
+" Plug 'williamboman/mason.nvim'  "<--useless
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "tema
-Plug 'sainnhe/gruvbox-material'
-Plug 'tribela/vim-transparent'
+" Plug 'sainnhe/gruvbox-material' "<--useless
+" Plug 'tribela/vim-transparent' "<--uselessplg
+
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
-"plugins instalados con coc :coc-prettier coc-eslint coc-emet coc-diagnostic coc-tsserver @yaegassy/coc-tailwindcss3 coc-snippets
+"plugins instalados con coc :coc-prettier coc-eslint coc-emet coc-diagnostic @yaegassy/coc-tailwindcss3 coc-snippets
 
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
 Plug 'neoclide/coc-emmet'
@@ -23,8 +24,8 @@ Plug 'mlaursen/vim-react-snippets'
 Plug 'kevinhwang91/rnvimr'
 
 "iconos
-Plug 'ryanoasis/vim-devicons'
-Plug 'nvim-tree/nvim-web-devicons'
+" Plug 'ryanoasis/vim-devicons'    "<--useless
+" Plug 'nvim-tree/nvim-web-devicons'  "<--useless only needed by telescope
 
 "autopairs
 Plug 'windwp/nvim-autopairs'
@@ -34,7 +35,7 @@ Plug 'fannheyward/coc-react-refactor'
 
 "barra de status
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes' 
+" Plug 'vim-airline/vim-airline-themes'  "<--useless
 
 "Commentary 
 Plug 'tpope/vim-commentary'
@@ -42,8 +43,6 @@ Plug 'tpope/vim-commentary'
 "git integrations 
 Plug 'kdheepak/lazygit.nvim'
 Plug 'lewis6991/gitsigns.nvim'
-" hide show code 
-" Plug 'kevinhwang91/nvim-ufo',{'branch': 'master'}
 "fzf
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }

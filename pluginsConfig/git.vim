@@ -3,11 +3,11 @@ let g:lazygit_floating_window_scaling_factor = 0.788 " scaling factor for floati
 let g:lazygit_floating_window_border_chars = ['╭', '─', '╮', '│', '╯', '─', '╰', '│']
 let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
 let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not installed
-highlight LazygitBorder guifg=#808080
+" highlight LazygitBorder guifg=#000000
 let g:lazygit_use_custom_config_file_path = 0 " config file path is evaluated if this value is 1
 let g:lazygit_config_file_path = '' " custom config file path
 " OR
-let g:lazygit_config_file_path = [] " list of custom config file paths
+" let g:lazygit_config_file_path = [] " list of custom config file paths
 nnoremap <space>g :LazyGit<CR>
 
 

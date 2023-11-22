@@ -1,7 +1,8 @@
 "highlight text 
-let g:gruvbox_material_background='medium'
-colorscheme gruvbox-material
-" colorscheme habamax
+" let g:gruvbox_material_background='hard'
+" colorscheme gruvbox-material
+colorscheme habamax
+" colorscheme slate
 let g:highlightedyank_highlight_duration = 1000
 let g:terminal_color=15
 
