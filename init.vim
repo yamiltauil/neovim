@@ -25,17 +25,17 @@
 :set wrap
 :set visualbell
 :set confirm
-" :set noruler
-" :set cursorline
+:set cursorline
 :set nocursorcolumn
 :set colorcolumn=
-:set termguicolors "<--- watch colors on neovim usefull for frontend development"
-:set list lcs=tab:··
+" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
+:set listchars=tab:\|\ ,trail:.
 :set fillchars+=vert:\ 
 :set statusline+=%{get(b:,'gitsigns_status','')}
 :set foldmethod=expr
 :set foldexpr=nvim_treesitter#foldexpr()
 :set foldlevel=99
+:set conceallevel=2 concealcursor=n
 
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
