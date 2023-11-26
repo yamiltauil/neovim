@@ -37,15 +37,15 @@ let g:rnvimr_action = {
             \ }
 
 " Add views for Ranger to adapt the size of floating window
-let g:rnvimr_ranger_views = [
-            \ {'minwidth': 90, 'ratio': []},
-            \ {'minwidth': 50, 'maxwidth': 89, 'ratio': [1,1]},
-            \ {'maxwidth': 49, 'ratio': [1]}
-            \ ]
+" let g:rnvimr_ranger_views = [
+"             \ {'minwidth': 90, 'ratio': []},
+"             \ {'minwidth': 50, 'maxwidth': 89, 'ratio': [1,1]},
+"             \ {'maxwidth': 49, 'ratio': [1]}
+"             \ ]
 
 " Customize the initial layout
-let g:rnvimr_layout = {
-            \ 'relative': 'editor',
+let g:rnvimr_layout = { 
+			      \ 'relative': 'editor',
             \ 'width': float2nr(round(0.8 * &columns)),
             \ 'height': float2nr(round(0.83 * &lines)),
             \ 'col': float2nr(round(0.098 * &columns)),
@@ -55,47 +55,20 @@ let g:rnvimr_layout = {
 
 " Customize multiple preset layouts
 " '{}' represents the initial layout
-let g:rnvimr_presets = [
-            \ {'width': 0.600, 'height': 0.600},
-            \ {},
-            \ {'width': 0.800, 'height': 0.800},
-            \ {'width': 0.950, 'height': 0.950},
-            \ {'width': 0.500, 'height': 0.500, 'col': 0, 'row': 0},
-            \ {'width': 0.500, 'height': 0.500, 'col': 0, 'row': 0.5},
-            \ {'width': 0.500, 'height': 0.500, 'col': 0.5, 'row': 0},
-            \ {'width': 0.500, 'height': 0.500, 'col': 0.5, 'row': 0.5},
-            \ {'width': 0.500, 'height': 1.000, 'col': 0, 'row': 0},
-            \ {'width': 0.500, 'height': 1.000, 'col': 0.5, 'row': 0},
-            \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0},
-            \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0.5}
-            \ ]
+" let g:rnvimr_presets = [
+"             \ {'width': 0.600, 'height': 0.600},
+"             \ {},
+"             \ {'width': 0.800, 'height': 0.800},
+"             \ {'width': 0.950, 'height': 0.950},
+"             \ {'width': 0.500, 'height': 0.500, 'col': 0, 'row': 0},
+"             \ {'width': 0.500, 'height': 0.500, 'col': 0, 'row': 0.5},
+"             \ {'width': 0.500, 'height': 0.500, 'col': 0.5, 'row': 0},
+"             \ {'width': 0.500, 'height': 0.500, 'col': 0.5, 'row': 0.5},
+"             \ {'width': 0.500, 'height': 1.000, 'col': 0, 'row': 0},
+"             \ {'width': 0.500, 'height': 1.000, 'col': 0.5, 'row': 0},
+"             \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0},
+"             \ {'width': 1.000, 'height': 0.500, 'col': 0, 'row': 0.5}
+"             \ ]
 
  " Only use initial preset layout
  " let g:rnvimr_presets = [{}]
-
-
-
-" lua << EOF
-" vim.g.loaded_netrw = 1
-" vim.g.loaded_netrwPlugin = 1
-
-" -- set termguicolors to enable highlight groups
-" vim.opt.termguicolors = true
-
-" -- empty setup using defaults
-" require("nvim-tree").setup()
-
-" -- OR setup with some options
-" require("nvim-tree").setup({
-"   sort_by = "case_sensitive",
-"   view = {
-"     width = 30,
-"   },
-"   renderer = {
-"     group_empty = true,
-"   },
-"   filters = {
-"     dotfiles = true,
-"   },
-" })
-" EOF
