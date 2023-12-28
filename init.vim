@@ -1,11 +1,12 @@
 :set mouse=a
 :syntax enable
+:set list
 :set showcmd
 :set encoding=utf-8
 :set showmatch
 :set number
-:set relativenumber
-:set number relativenumber
+" :set relativenumber
+" :set number relativenumber
 :set splitbelow
 :set splitright
 :set autoindent
@@ -28,15 +29,23 @@
 :set cursorline
 :set nocursorcolumn
 :set colorcolumn=
-" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
-:set listchars=tab:\|\ ,trail:.
-:set fillchars+=vert:\ 
+:set termguicolors "<--- watch colors on neovim usefull for frontend development"
+:set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
+" :set fillchars+=vert:\ 
 :set statusline+=%{get(b:,'gitsigns_status','')}
+:set statusline+=\{…\}%3{codeium#GetStatusString()}
 :set foldmethod=expr
 :set foldexpr=nvim_treesitter#foldexpr()
 :set foldlevel=99
 :set conceallevel=2 concealcursor=n
-
+"estos fueron sugeridos por la ia 
+:set signcolumn=yes
+:set updatetime=300
+:set shortmess+=c
+:set scrolloff=8
+:set sidescrolloff=8
+:set lazyredraw
+" ----------------------------
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
 source ~/.config/nvim/pluginsConfig/cocConfig.vim
