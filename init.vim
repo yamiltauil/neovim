@@ -1,50 +1,65 @@
-:set mouse=a
 :syntax enable
-:set list
-:set showcmd
-:set encoding=utf-8
-:set showmatch
-:set number
-" :set relativenumber
-" :set number relativenumber
-:set splitbelow
-:set splitright
 :set autoindent
-:set smarttab
-:set noexpandtab
-:set tabstop=2
-:set pumheight=15
-:set completeopt=menuone,noinsert,noselect
-:set omnifunc=syntaxcomplete#Complete
-:set shiftwidth=2
-:set hlsearch
-:set incsearch
 :set cc=80
-:set clipboard+=unnamedplus
-:set laststatus=2
-:set smartcase
-:set wrap
-:set visualbell
+:set completeopt=menuone,noinsert,noselect
 :set confirm
-:set cursorline
-:set nocursorcolumn
+:set conceallevel=2 concealcursor=n
 :set colorcolumn=
-:set termguicolors "<--- watch colors on neovim usefull for frontend development"
-:set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
-" :set fillchars+=vert:\ 
-:set statusline+=%{get(b:,'gitsigns_status','')}
-:set statusline+=\{…\}%3{codeium#GetStatusString()}
+:set cursorline
+:set clipboard+=unnamedplus
+
+:set encoding=utf-8
+:set fillchars+=vert:\
 :set foldmethod=expr
 :set foldexpr=nvim_treesitter#foldexpr()
 :set foldlevel=99
-:set conceallevel=2 concealcursor=n
-"estos fueron sugeridos por la ia 
-:set signcolumn=yes
-:set updatetime=300
+
+:set hlsearch
+
+:set incsearch
+
+:set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
+:set laststatus=2
+:set lazyredraw
+:set list
+
+:set mouse=a
+
+:set number
+:set noexpandtab
+:set nocursorcolumn
+:set noshowmode
+
+:set omnifunc=syntaxcomplete#Complete
+
+:set pumheight=15
+
+:set showcmd
+:set splitbelow
+:set splitright
+:set smarttab
+:set showmatch
+:set shiftwidth=2
+:set smartcase
 :set shortmess+=c
 :set scrolloff=8
 :set sidescrolloff=8
-:set lazyredraw
+:set statusline+=%{get(b:,'gitsigns_status','')}
+:set statusline+=\{…\}%3{codeium#GetStatusString()}
+:set signcolumn=yes
+
+:set tabstop=2
+:set termguicolors "<--- watch colors on neovim usefull for frontend development"
+
+:set updatetime=300
+" :set relativenumber
+" :set number relativenumber
+:set visualbell
+
+:set wrap
+
+
+:h statuscolumn
 " ----------------------------
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim

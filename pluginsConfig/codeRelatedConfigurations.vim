@@ -7,14 +7,14 @@ nnoremap <space>f :call CocAction('runCommand', 'prettier.formatFile')<CR>:w<CR>
 nnoremap <space>, :Commentary<CR>
 vnoremap <space>, :Commentary<CR>  
 
-"ctags 
-nnoremap <space>t :tag   <C-R>=expand('<cword>')<CR><CR>
+nnoremap <space>t <cmd>:tag<cr>
 
 "find 
 nnoremap <Space>p /
 
 "surround 
-vnoremap <silent> S( :s/\%V.*\%V.\?/( & )/<CR>`<CR>
+"qiero que luego de encerrar en el bloque , deje de remarcar a la palabra 
+vnoremap <silent> S( :s/\%V.*\%V.\?/( & )/<CR>`<CR> 
 vnoremap <silent> S[ :s/\%V.*\%V.\?/[ & ]/<CR>`<CR>
 vnoremap <silent> S{ :s/\%V.*\%V.\?/{ & }/<CR>`<CR>
 vnoremap <silent> S< :s/\%V.*\%V.\?/< & >/<CR>`<CR>

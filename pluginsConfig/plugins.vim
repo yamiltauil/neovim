@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-
 Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc-tsserver'
 " Plug 'williamboman/mason.nvim'  "<--useless
@@ -8,7 +7,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "tema
 Plug 'sainnhe/gruvbox-material' "<--useless
-" Plug 'tribela/vim-transparent' "<--uselessplg
+Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
 "plugins instalados con coc :
@@ -41,6 +40,7 @@ Plug 'fannheyward/coc-react-refactor'
 "barra de status
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'  "<--useless
+Plug 'Yggdroot/indentLine'
 
 "Commentary 
 Plug 'tpope/vim-commentary'

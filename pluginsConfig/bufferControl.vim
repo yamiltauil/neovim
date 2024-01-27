@@ -9,3 +9,6 @@ nnoremap <Space>h <C-w>h
 
 " split vertical buffer 
 nnoremap <space>v :vsplit<CR>
+
+" split horizontal buffer 
+nnoremap <space>s :split<CR>

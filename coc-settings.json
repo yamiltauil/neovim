@@ -18,7 +18,7 @@
   "eslint.alwaysShowStatus": true,
   "eslint.run": "onSave",
 	"eslint.autoFixOnSave":true,
-  "eslint.format.enable": false,
+  "eslint.format.enable": true,
   "diagnostic.messageTarget": "float",
   "diagnostic.warningSign": "⚠️",
   "diagnostic.errorSign": "⏭️",
