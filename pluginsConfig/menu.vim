@@ -1,14 +1,14 @@
- let g:rnvimr_ex_enable = 1
+ " let g:rnvimr_ex_enable = 1
 
- let g:rnvimr_enable_picker = 1
+ " let g:rnvimr_enable_picker = 1
 
- let g:rnvimr_draw_border = 1
- let g:rnvimr_win_height = 70
- let g:rnvimr_enable_bw = 1
+ " let g:rnvimr_draw_border = 1
+ " let g:rnvimr_win_height = 70
+ " let g:rnvimr_enable_bw = 1
 
- " Draw border with both
- let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
- let g:rnvimr_border_attr = {'fg': 7, 'bg': -1}
+ " " Draw border with both
+ " let g:rnvimr_ranger_cmd = ['ranger', '--cmd=set draw_borders both']
+ " let g:rnvimr_border_attr = {'fg': 7, 'bg': -1}
  " 0 gris
  " 1  red
  " 2 green
@@ -22,19 +22,21 @@
  " 10 verde 
  " Add a shadow window, value is equal to 100 will disable shadow
  " let g:rnvimr_shadow_winblend = 100
- let g:rnvimr_edit_cmd = 'drop'
+ " let g:rnvimr_edit_cmd = 'drop'
 
- nnoremap <space>r :RnvimrToggle<CR>
+ " nnoremap <space>r :RnvimrToggle<CR>
  " tnoremap <space>1 <C-\><C-n>:RnvimrToggle<CR>
+let NERDTreeShowHidden=1
+ nnoremap <space>r :NERDTreeToggle<CR>
 
 " Map Rnvimr action
-let g:rnvimr_action = {
-            \ '<C-t>': 'NvimEdit tabedit',
-            \ '<C-x>': 'NvimEdit split',
-            \ '<C-v>': 'NvimEdit vsplit',
-            \ 'gw': 'JumpNvimCwd',
-            \ 'yw': 'EmitRangerCwd'
-            \ }
+" let g:rnvimr_action = {
+"             \ '<C-t>': 'NvimEdit tabedit',
+"             \ '<C-x>': 'NvimEdit split',
+"             \ '<C-v>': 'NvimEdit vsplit',
+"             \ 'gw': 'JumpNvimCwd',
+"             \ 'yw': 'EmitRangerCwd'
+"             \ }
 
 " Add views for Ranger to adapt the size of floating window
 " let g:rnvimr_ranger_views = [
@@ -44,14 +46,14 @@ let g:rnvimr_action = {
 "             \ ]
 
 " Customize the initial layout
-let g:rnvimr_layout = { 
-			      \ 'relative': 'editor',
-            \ 'width': float2nr(round(0.8 * &columns)),
-            \ 'height': float2nr(round(0.83 * &lines)),
-            \ 'col': float2nr(round(0.098 * &columns)),
-            \ 'row': float2nr(round(0.07 * &lines)),
-            \ 'style': 'minimal'
-            \ }
+" let g:rnvimr_layout = { 
+"           º  \ 'relative': 'editor',
+"             \ 'width': float2nr(round(0.8 * &columns)),
+"             \ 'height': float2nr(round(0.83 * &lines)),
+"             \ 'col': float2nr(round(0.098 * &columns)),
+"             \ 'row': float2nr(round(0.07 * &lines)),
+"             \ 'style': 'minimal'
+"             \ }
 
 " Customize multiple preset layouts
 " '{}' represents the initial layout
@@ -72,3 +74,4 @@ let g:rnvimr_layout = {
 
  " Only use initial preset layout
  " let g:rnvimr_presets = [{}]
+ "
