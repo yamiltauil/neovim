@@ -7,4 +7,33 @@ nnoremap <silent>gr :Telescope lsp_references<CR>
 "hago click izquierdo a un elemento 
 nnoremap <space>t <cmd>:tag<cr>
 
-
+lua << EOF
+require('telescope').setup({
+ defaults = {
+    layout_strategy = 'horizontal',
+    layout_config = {
+      vertical = { mirror = false },
+      horizontal = { mirror = false },
+    },
+    file_ignore_patterns = {},
+    prompt_position = "bottom",
+    scroll_speed = 10,
+    preview_cutoff = 120,
+    results_height = 1,
+    results_scroll_offset = 1,
+    borderchars = {'─', '│', '-', '│', '╭', '╮', '╯', '╰'},
+    prompt_prefix = '> ',
+    initial_mode = 'insert',
+    selection_strategy = 'reset',
+    sorting_strategy = 'descending',
+    layout_config = {
+      horizontal = {
+        preview_width = 0.6,
+      },
+      vertical = {
+        preview_height = 0.5,
+      },
+    },
+ },
+})
+EOF
