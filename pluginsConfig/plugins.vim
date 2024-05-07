@@ -7,7 +7,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "tema
 Plug 'sainnhe/gruvbox-material' "<--useless
-Plug 'tribela/vim-transparent' "<--uselessplgPlg
+" Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
 "plugins instalados con coc :
@@ -25,8 +25,8 @@ Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
 "menu
-Plug 'kevinhwang91/rnvimr' "useless we have nertwr as default menu
-
+" Plug 'kevinhwang91/rnvimr' "useless we have nertwr as default menu
+Plug 'preservim/nerdtree'
 "iconos
 Plug 'ryanoasis/vim-devicons'    "<--useless
 Plug 'nvim-tree/nvim-web-devicons'  "<--useless only needed by telescope
@@ -41,7 +41,7 @@ Plug 'fannheyward/coc-react-refactor'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'  "<--useless
 Plug 'Yggdroot/indentLine'
-
+" Plug 'vimpostor/vim-tpipeline' "<-- hide tmux status bar
 "Commentary 
 Plug 'tpope/vim-commentary'
 
