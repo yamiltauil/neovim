@@ -30,6 +30,7 @@
   "colors.enable": true,
 	"colors.highlightPriority": 1000,
   "prettier.enable": true,
+	"prettier.tabWidth": 2,
   "prettier.singleQuote": true,
 	"prettier.jsxSingleQuote": true,
   "prettier.requireConfig": true,
