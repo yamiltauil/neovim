@@ -9,7 +9,6 @@
 :set clipboard+=unnamedplus
 
 :set encoding=utf-8
-:set fillchars+=vert:\
 :set foldmethod=expr
 :set foldexpr=nvim_treesitter#foldexpr()
 :set foldlevel=99
@@ -26,10 +25,10 @@
 :set mouse=a
 
 :set number
-:set noexpandtab
+:set expandtab
 :set nocursorcolumn
+:set nocursorline
 :set noshowmode
-
 :set omnifunc=syntaxcomplete#Complete
 
 :set pumheight=15
@@ -55,10 +54,10 @@
 " :set relativenumber
 " :set number relativenumber
 :set visualbell
-
 :set wrap
-
-
+"i want to see the status column, and the git signs icons in paralel to status
+"column
+:set statuscolumn
 :h statuscolumn
 " ----------------------------
 " PLUGINS CONFIG
