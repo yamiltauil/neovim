@@ -70,6 +70,3 @@ source ~/.config/nvim/pluginsConfig/fuzyfinder.vim
 
 " SEARCH AND REPLACE
 source ~/.config/nvim/pluginsConfig/searchAndReplace.vim
-
-" FUNCTIONS 
-" source ~/.config/nvim/functions/findAndReplace.vim
