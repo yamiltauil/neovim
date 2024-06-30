@@ -13,7 +13,6 @@ nnoremap <space>t <cmd>:tag<cr>
 nnoremap <Space>p /
 
 "surround 
-"qiero que luego de encerrar en el bloque , deje de remarcar a la palabra 
 vnoremap <silent> S( :s/\%V.*\%V.\?/( & )/<CR>`<CR> 
 vnoremap <silent> S[ :s/\%V.*\%V.\?/[ & ]/<CR>`<CR>
 vnoremap <silent> S{ :s/\%V.*\%V.\?/{ & }/<CR>`<CR>

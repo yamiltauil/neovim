@@ -3,10 +3,10 @@ Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc-tsserver'
 " Plug 'williamboman/mason.nvim'  "<--useless
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter'
 
 "tema
-Plug 'sainnhe/gruvbox-material' "<--useless
+Plug 'sainnhe/gruvbox-material' "<--uselessplu
 " Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
@@ -20,13 +20,17 @@ Plug 'Exafunction/codeium.vim'
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
 Plug 'neoclide/coc-emmet'
 
+" search and replace 
+Plug 's1n7ax/nvim-search-and-replace'
 "snippets
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
 "menu
-" Plug 'kevinhwang91/rnvimr' "useless we have nertwr as default menu
 Plug 'preservim/nerdtree'
+"status column 
+Plug 'luukvbaal/statuscol.nvim'
+
 "iconos
 Plug 'ryanoasis/vim-devicons'    "<--useless
 Plug 'nvim-tree/nvim-web-devicons'  "<--useless only needed by telescope
@@ -35,13 +39,12 @@ Plug 'nvim-tree/nvim-web-devicons'  "<--useless only needed by telescope
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'tpope/vim-surround'
-Plug 'fannheyward/coc-react-refactor'
+" Plug 'fannheyward/coc-react-refactor'
 
 "barra de status
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'  "<--useless
 Plug 'Yggdroot/indentLine'
-" Plug 'vimpostor/vim-tpipeline' "<-- hide tmux status bar
 "Commentary 
 Plug 'tpope/vim-commentary'
 
