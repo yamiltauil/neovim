@@ -46,19 +46,15 @@
 :set statusline+=%{get(b:,'gitsigns_status','')}
 :set statusline+=\{…\}%3{codeium#GetStatusString()}
 :set signcolumn=yes
-
 :set tabstop=2
-:set termguicolors "<--- watch colors on neovim usefull for frontend development"
-
+" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
 :set updatetime=300
 " :set relativenumber
 " :set number relativenumber
 :set visualbell
 :set wrap
-"i want to see the status column, and the git signs icons in paralel to status
-"column
-:set statuscolumn
-:h statuscolumn
+:set statuscolumn = "%s %l %r"
+" :help statuscolumn
 " ----------------------------
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
@@ -72,5 +68,8 @@ source ~/.config/nvim/pluginsConfig/bufferControl.vim
 source ~/.config/nvim/pluginsConfig/codeRelatedConfigurations.vim
 source ~/.config/nvim/pluginsConfig/fuzyfinder.vim
 
+" SEARCH AND REPLACE
+source ~/.config/nvim/pluginsConfig/searchAndReplace.vim
+
 " FUNCTIONS 
-source ~/.config/nvim/functions/findAndReplace.vim
+" source ~/.config/nvim/functions/findAndReplace.vim
