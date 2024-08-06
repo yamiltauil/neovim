@@ -12,7 +12,7 @@
     "border": false
   },
   "codeLens.enable": true,
-  "eslint.enable": true,
+  "eslint.enable":true,
   "eslint.packageManager": "npm",
   "eslint.fixOnSaveTimeout": 1000,
   "eslint.alwaysShowStatus": true,
@@ -39,7 +39,7 @@
 	"javascript.preferences.quoteStyle": "auto",
   "javascript.suggest.autoImports": true,
   "javascript.suggest.enabled": true,
-  "javascript.autoClosingTags": false,
+  "javascript.autoClosingTags": true,
 	"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
 	"snippet.highlight": true,
 	"snippets.priority": 90,

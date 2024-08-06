@@ -47,7 +47,7 @@
 :set statusline+=\{…\}%3{codeium#GetStatusString()}
 :set signcolumn=yes
 :set tabstop=2
-" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
+:set termguicolors "<--- watch colors on neovim usefull for frontend development"
 :set updatetime=300
 " :set relativenumber
 " :set number relativenumber
