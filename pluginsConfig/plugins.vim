@@ -7,6 +7,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 
 "tema
 Plug 'sainnhe/gruvbox-material' "<--uselessplu
+Plug 'folke/tokyonight.nvim'
 " Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
@@ -46,7 +47,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'  "<--useless
 Plug 'Yggdroot/indentLine'
 "Commentary 
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdcommenter'
 
 "git integrations 
 Plug 'kdheepak/lazygit.nvim'
