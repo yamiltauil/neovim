@@ -56,6 +56,7 @@
 :set statuscolumn = "%s %l %r"
 " :help statuscolumn
 " ----------------------------
+let g:codeium_panel=1
 " PLUGINS CONFIG
 source ~/.config/nvim/pluginsConfig/plugins.vim
 source ~/.config/nvim/pluginsConfig/cocConfig.vim
@@ -67,6 +68,6 @@ source ~/.config/nvim/pluginsConfig/git.vim
 source ~/.config/nvim/pluginsConfig/bufferControl.vim
 source ~/.config/nvim/pluginsConfig/codeRelatedConfigurations.vim
 source ~/.config/nvim/pluginsConfig/fuzyfinder.vim
-
+source ~/.config/nvim/pluginsConfig/commenter.vim
 " SEARCH AND REPLACE
 source ~/.config/nvim/pluginsConfig/searchAndReplace.vim

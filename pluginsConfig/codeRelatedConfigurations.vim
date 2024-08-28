@@ -4,8 +4,16 @@
 nnoremap <space>f :call CocAction('runCommand', 'prettier.formatFile')<CR>:w<CR>:CocCommand eslint.executeAutofix<CR>
 
 " comment and uncomment
-nnoremap <space>, :Commentary<CR>
-vnoremap <space>, :Commentary<CR>  
+"  nnoremap <space>, :Commentary<CR>
+" vnoremap <space>, :Commentary<CR>
+" Comentario de línea o selección
+nmap <space>, <Plug>NERDCommenterComment
+xmap <space>, <Plug>NERDCommenterComment
+
+" Descomentario de línea o selección
+nmap <space>,. <Plug>NERDCommenterUncomment
+xmap <space>,. <Plug>NERDCommenterUncomment
+
 
 nnoremap <space>t <cmd>:tag<cr>
 
@@ -31,7 +39,7 @@ inoremap <script><silent><nowait><expr> <C-G> codeium#Accept()
 inoremap <C-;>  <Cmd>call codeium#CycleCompletions(1)<CR> "next completado"
 inoremap <C-,>  <Cmd>call codeium#CycleCompletions(-1)<CR> "orevious completado"
 inoremap <C-x>  <Cmd>call codeium#Clear()<CR> "limpiar autocompletado
-
+nnoremap <space>c  <Cmd>call codeium#Chat()<CR>
 "hide and show code 
 " zc close code block
 " zo open code block 
@@ -39,4 +47,3 @@ inoremap <C-x>  <Cmd>call codeium#Clear()<CR> "limpiar autocompletado
 lua << EOF
 require("nvim-autopairs").setup { map_cr = false }
 EOF
-
