@@ -14,7 +14,7 @@
 :set foldlevel=99
 
 :set hlsearch
-
+     
 :set incsearch
 let g:typescript_tsserver = 1
 :set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
@@ -26,8 +26,8 @@ let g:typescript_tsserver = 1
 
 :set number
 :set expandtab
-:set nocursorcolumn
-:set nocursorline
+" :set nocursorcolumn
+" :set nocursorline
 :set noshowmode
 :set omnifunc=syntaxcomplete#Complete
 
@@ -47,7 +47,7 @@ let g:typescript_tsserver = 1
 :set statusline+=\{…\}%3{codeium#GetStatusString()}
 :set signcolumn=yes
 :set tabstop=2
-:set termguicolors "<--- watch colors on neovim usefull for frontend development"
+" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
 :set updatetime=300
 " :set relativenumber
 " :set number relativenumber
