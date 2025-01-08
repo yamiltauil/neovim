@@ -1,6 +1,7 @@
 " highlight text 
-let g:gruvbox_material_background='soft'
-colorscheme gruvbox-material
+" let g:gruvbox_material_background='soft'
+" colorscheme gruvbox-material
+colorscheme retrobox
 " colorscheme habamax
 let g:highlightedyank_highlight_duration = 1000
 let g:terminal_color=15
@@ -12,6 +13,7 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false,
   auto_install = true,
   enable = true,
+  update_old_parsers_on_save = true,
   additional_vim_regex_highlighting = true,
   disable = {},
   indent = { enable = true },
