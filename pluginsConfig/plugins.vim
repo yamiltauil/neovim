@@ -8,6 +8,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 "tema
 Plug 'sainnhe/gruvbox-material' "<--uselessplu
 Plug 'folke/tokyonight.nvim'
+Plug 'EdenEast/nightfox.nvim' " Vim-Plug
 " Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
@@ -24,6 +25,7 @@ Plug 'neoclide/coc-emmet'
 " search and replace 
 Plug 's1n7ax/nvim-search-and-replace'
 "snippets
+Plug 'pmizio/typescript-tools.nvim'
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
@@ -56,7 +58,7 @@ Plug 'lewis6991/gitsigns.nvim'
 "fzf
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
-Plug 'nvim-telescope/telescope-fzf-native.nvim' "useless
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'BurntSushi/ripgrep'
 
 call plug#end()
