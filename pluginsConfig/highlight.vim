@@ -1,8 +1,8 @@
 " highlight text 
 " let g:gruvbox_material_background='soft'
 " colorscheme gruvbox-material
-colorscheme retrobox
-" colorscheme habamax
+" colorscheme retrobox
+colorscheme habamax
 let g:highlightedyank_highlight_duration = 1000
 let g:terminal_color=15
 
@@ -47,3 +47,5 @@ let g:indentLine_color_gui = colordos
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
+
+nnoremap <space>3 :Telescope colorscheme<CR>
