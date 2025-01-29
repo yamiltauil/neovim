@@ -7,12 +7,12 @@ nnoremap <space>f :call CocAction('runCommand', 'prettier.formatFile')<CR>:w<CR>
 "  nnoremap <space>, :Commentary<CR>
 " vnoremap <space>, :Commentary<CR>
 " Comentario de línea o selección
-nmap <space>, <Plug>NERDCommenterComment
-xmap <space>, <Plug>NERDCommenterComment
+nmap <space>1 <Plug>NERDCommenterComment
+xmap <space>1 <Plug>NERDCommenterComment
 
 " Descomentario de línea o selección
-nmap <space>,. <Plug>NERDCommenterUncomment
-xmap <space>,. <Plug>NERDCommenterUncomment
+nmap <space>2 <Plug>NERDCommenterUncomment
+xmap <space>2 <Plug>NERDCommenterUncomment
 
 
 nnoremap <space>t <cmd>:tag<cr>
