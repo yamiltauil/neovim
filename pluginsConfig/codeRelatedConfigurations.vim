@@ -3,17 +3,6 @@
 " nnoremap <space>f :call CocAction('runCommand', 'prettier.formatFile')<CR>:w<CR>
 nnoremap <space>f :call CocAction('runCommand', 'prettier.formatFile')<CR>:w<CR>:CocCommand eslint.executeAutofix<CR>
 
-" comment and uncomment
-"  nnoremap <space>, :Commentary<CR>
-" vnoremap <space>, :Commentary<CR>
-" Comentario de línea o selección
-nmap <space>1 <Plug>NERDCommenterComment
-xmap <space>1 <Plug>NERDCommenterComment
-
-" Descomentario de línea o selección
-nmap <space>2 <Plug>NERDCommenterUncomment
-xmap <space>2 <Plug>NERDCommenterUncomment
-
 
 nnoremap <space>t <cmd>:tag<cr>
 
@@ -21,13 +10,13 @@ nnoremap <space>t <cmd>:tag<cr>
 nnoremap <Space>p /
 
 "surround 
-vnoremap <silent> S( :s/\%V.*\%V.\?/( & )/<CR>`<CR> 
-vnoremap <silent> S[ :s/\%V.*\%V.\?/[ & ]/<CR>`<CR>
-vnoremap <silent> S{ :s/\%V.*\%V.\?/{ & }/<CR>`<CR>
-vnoremap <silent> S< :s/\%V.*\%V.\?/< & >/<CR>`<CR>
-vnoremap <silent> S" :s/\%V.*\%V.\?/"&"/<CR>`<CR>
-vnoremap <silent> S' :s/\%V.*\%V.\?/'&'/<CR>`<CR>
-vnoremap <silent> S` :s/\%V.*\%V.\?/`&`/<CR>`<CR>
+vnoremap <silent> S( :s/\%V.*\%V.\?/( & )/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S[ :s/\%V.*\%V.\?/[ & ]/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S{ :s/\%V.*\%V.\?/{ & }/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S< :s/\%V.*\%V.\?/< & >/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S" :s/\%V.*\%V.\?/"&"/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S' :s/\%V.*\%V.\?/'&'/<CR>/alsadlkjadkajd<CR>`<CR>
+vnoremap <silent> S` :s/\%V.*\%V.\?/`&`/<CR>/alsadlkjadkajd<CR>`<CR>
 
 "refactor
 xmap <space>x <Plug>(coc-codeaction-selected)
