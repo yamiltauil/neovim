@@ -24,3 +24,17 @@ let g:NERDTrimTrailingWhitespace = 1
 
 " Enable NERDCommenterToggle to check all selected lines is commented or not 
 let g:NERDToggleCheckAllLines = 1
+
+
+" comment and uncomment
+"  nnoremap <space>, :Commentary<CR>
+" vnoremap <space>, :Commentary<CR>
+" Comentario de línea o selección
+nmap <space>1 <Plug>NERDCommenterComment
+xmap <space>1 <Plug>NERDCommenterComment
+
+" Descomentario de línea o selección
+nmap <space>2 <Plug>NERDCommenterUncomment
+xmap <space>2 <Plug>NERDCommenterUncomment
+
+

@@ -47,15 +47,21 @@ let g:typescript_tsserver = 1
 :set statusline+=\{…\}%3{codeium#GetStatusString()}
 :set signcolumn=yes
 :set tabstop=2
-" :set termguicolors "<--- watch colors on neovim usefull for frontend development"
+:set termguicolors "<--- watch colors on neovim usefull for frontend development"
 :set updatetime=300
 " :set relativenumber
 " :set number relativenumber
 :set visualbell
 :set wrap
 :set statuscolumn = "%s %l %r"
-" :help statuscolumn
-"
+:help statuscolumn
+:set statusline+=%{get(b:,'gitsigns_status','')}
+augroup numbertoggle
+	autocmd!
+	autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+	autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+augroup END
+
 " ----------------------------
 let g:codeium_panel=1
 " PLUGINS CONFIG
