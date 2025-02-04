@@ -9,7 +9,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sainnhe/gruvbox-material' "<--uselessplu
 Plug 'folke/tokyonight.nvim'
 Plug 'EdenEast/nightfox.nvim' " Vim-Plug
-" Plug 'tribela/vim-transparent' "<--uselessplgPlg
+Plug 'tribela/vim-transparent' "<--uselessplgPlg
 
 "autocompletado  requiere sudo npm install -g typescript typescript-language-server && npm install -g taliwind && sudo npm install --global eslint-lsp
 "plugins instalados con coc :
@@ -29,6 +29,8 @@ Plug 'pmizio/typescript-tools.nvim'
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
 
+"RAILS DEVELOPMENT
+Plug 'tpope/vim-rails'
 "menu
 Plug 'preservim/nerdtree'
 "status column 
