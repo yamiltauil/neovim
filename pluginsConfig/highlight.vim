@@ -2,7 +2,8 @@
 " let g:gruvbox_material_background='soft'
 " colorscheme gruvbox-material
 " colorscheme retrobox
-colorscheme habamax
+" colorscheme habamax
+colorscheme tokyonight-storm
 let g:highlightedyank_highlight_duration = 1000
 let g:terminal_color=15
 
@@ -19,9 +20,7 @@ require'nvim-treesitter.configs'.setup {
   indent = { enable = true },
   rainbow = { enable = true },
 	highlight = { enable = true},
-	  autotag = {
-    enable = true,
-  }
+	autotag = {enable = true,}
 }
 EOF
 
