@@ -28,9 +28,11 @@ Plug 's1n7ax/nvim-search-and-replace'
 Plug 'pmizio/typescript-tools.nvim'
 Plug 'honza/vim-snippets'
 Plug 'mlaursen/vim-react-snippets'
+"multicursor
+Plug 'jake-stewart/multicursor.nvim',{ 'branch': '1.0' }
 
 "RAILS DEVELOPMENT
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 "menu
 Plug 'preservim/nerdtree'
 "status column 
