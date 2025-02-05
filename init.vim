@@ -76,5 +76,6 @@ source ~/.config/nvim/pluginsConfig/bufferControl.vim
 source ~/.config/nvim/pluginsConfig/codeRelatedConfigurations.vim
 source ~/.config/nvim/pluginsConfig/fuzyfinder.vim
 source ~/.config/nvim/pluginsConfig/commenter.vim
+source ~/.config/nvim/pluginsConfig/multicursor.vim
 " SEARCH AND REPLACE
 source ~/.config/nvim/pluginsConfig/searchAndReplace.vim
