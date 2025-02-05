@@ -21,7 +21,7 @@
   "eslint.format.enable": true,
   "diagnostic.messageTarget": "float",
   "diagnostic.warningSign": "⚠️",
-  "diagnostic.errorSign": "⏭️",
+  "diagnostic.errorSign": "❌",
   "diagnostic.virtualTextFormat": "%message",
 	"diagnostic.enableHighlightLineNumber": true,
 	"diagnostic.floatConfig": {
@@ -33,6 +33,7 @@
 	"prettier.tabWidth": 2,
   "prettier.singleQuote": true,
 	"prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "all",
   "prettier.requireConfig": true,
 	"prettier.onlyUseLocalVersion": true,
 	"typescript.preferences.quoteStyle":"auto",
@@ -45,6 +46,7 @@
 	"snippets.priority": 90,
 	"snippets.autoTrigger": true,
 	"snippets.extends": {
+      "typescriptreact": ["typescript"],
 		  "javascriptreact": ["javascript"],
 		  "typescript": ["javascript"]
   },

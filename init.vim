@@ -14,7 +14,6 @@ syntax enable
 :set foldlevel=99
 
 :set hlsearch
-     
 :set incsearch
 let g:typescript_tsserver = 1
 :set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
